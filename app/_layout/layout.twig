@@ -21,6 +21,11 @@
 
 		<!-- ... the rest of the HTML page ... -->
 		{% include '_layout/header.twig' %}
+		
+		{% block page %}{% endblock %}
+		
+		{% include '_layout/footer.twig' %}
+		
 		{% block before_js %}{% endblock %}
 
 		<script src="{{assets_url}}/js/app.js"></script>
